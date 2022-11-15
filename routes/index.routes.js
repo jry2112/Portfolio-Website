@@ -2,20 +2,16 @@
 const express = require("express");
 const router = express.Router();
 
-router.get('/', (req, res)=>{
-    res.status(200);
-    res.send("Welcome to the Home Page");
-});
+const {
+    getHome,
+    getAbout,
+    getProjects
+} = require('../controllers/index.controller');
 
-router.get('/about', (req, res)=>{
-    res.status(200);
-    res.send("Welcome to the About Page");
-});
+router.get('/', getHome);
 
-router.get('/projects', (req, res)=>{
-    res.status(200);
-    res.send("Welcome to the Projects Page");
-});
+router.get('/about', getAbout);
 
+router.get('/projects', getProjects);
 
 module.exports = router;
