@@ -1,0 +1,54 @@
+/*Background */
+
+body {
+    background-color: #A9BCD0;
+}
+
+.background-page {
+    background-color: #D8DBE2;
+    margin: auto;
+    width: 80%;
+    padding: 5rem;
+}
+
+/* Header Area */
+.header {
+    overflow: hidden;
+    background-color: #A9BCD0;
+}
+
+.header-right {
+    float: right;
+}
+
+/* Bio */
+.bio-info {
+    position: relative;
+    margin: auto;
+    width: 90%;
+}
+
+h1.bio-info {
+ color: black;
+ width: 40%;   
+ margin: 1rem;
+
+}
+
+div.bio-info-body {
+    position: relative;
+    width: 55%;
+}
+
+.bio-info-image {
+    width: fit-content;
+    position: relative;
+    margin: 2rem;
+}
+
+.headshot {
+    border-radius: 30%;
+    max-width: 75%;
+    height: auto;
+
+}

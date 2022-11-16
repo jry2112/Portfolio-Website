@@ -9,9 +9,16 @@
     </header>
     
     <main>
-      <div>
-        <h1>This is great</h1>
-        <p>Welcome to templating using EJS</p>
+      <div class="background-page">
+        <div class="bio-info">
+          <h1 class="bio-info">Hi, I'm Jada</h1>
+          <div class="bio-info-body">
+            <p>I'm a NYC-based Software Engineer currently studying Computer Science at Oregon State University.</p>
+            <div class="bio-info-image">
+              <img class="headshot" src="assets/images/headshot.jpg" alt="A black, brown, and white dog wearing a kerchief">
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
@@ -19,5 +26,7 @@
       <%- include('../partials/footer'); %>
     </footer>
 
+    
+  <script src="assets/scripts/index.js"></script>
 </body>
 </html>

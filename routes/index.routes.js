@@ -8,10 +8,13 @@ const {
     getProjects
 } = require('../controllers/index.controller');
 
+// Home Page
 router.get('/', getHome);
 
+// About Page
 router.get('/about', getAbout);
 
+// Project Page
 router.get('/projects', getProjects);
 
 module.exports = router;
