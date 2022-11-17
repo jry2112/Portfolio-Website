@@ -105,3 +105,13 @@ div.projects {
     margin: auto;
     text-align: center;
 }
+
+.project-title {
+    position: relative;
+}
+
+.project-screenshot {
+    position: relative;
+    width: 80%;
+    height: auto;
+}

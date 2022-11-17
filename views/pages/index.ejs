@@ -95,6 +95,13 @@
       <!--Projects Section-->
       <div class="projects">
         <h2 class="section-header">Projects</h2>
+
+        <% projects.forEach(function(project) { %>
+          <strong class="project-title"> <%= project.name %></strong>
+          <div>
+            <img class="project-screenshot" src="<%= project.image %>" alt="project.alt">
+          </div>
+        <% }); %>
       </div>
     </div>
   </main>

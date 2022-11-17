@@ -1,7 +1,15 @@
 // Display Home Page
 const getHome = ((req, res) => {
+    var projects = [
+        {name: 'Project 1', image: 'assets/images/FindFlights_screenshot.png', alt: 'Screenshot of sample'},
+        {name: 'Project 2', image: 'assets/images/FindFlights_screenshot.png', alt: 'Screenshot of sample'},
+        {name: 'Project 3', image: 'assets/images/FindFlights_screenshot.png', alt: 'Screenshot of sample'},
+    ];
+
     res.status(200);
-    res.render('pages/index');
+    res.render('pages/index', {
+        projects: projects
+    });
 });
 
 
