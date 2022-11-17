@@ -4,8 +4,14 @@ body {
     background-color: #A9BCD0;
 }
 
+div {
+    padding: 1rem;
+}
+
 .background-page {
     background-color: #D8DBE2;
+    box-shadow: 10px 5px 5px #8A93A8;
+    border-radius: 10px 15px 15px 10px;;
     margin: auto;
     width: 80%;
     padding: 5rem;
@@ -21,11 +27,15 @@ body {
     float: right;
 }
 
+/* Footer Area */
+
+
 /* Bio */
 .bio-info {
     position: relative;
     margin: auto;
     width: 90%;
+    overflow: hidden;
 }
 
 h1.bio-info {
@@ -38,17 +48,60 @@ h1.bio-info {
 div.bio-info-body {
     position: relative;
     width: 55%;
+    float: left;
+    margin: auto;
 }
 
-.bio-info-image {
-    width: fit-content;
+div.bio-info-image {
+    width: 35%;
     position: relative;
-    margin: 2rem;
+    margin: auto;
+    float: right;
 }
 
 .headshot {
-    border-radius: 30%;
-    max-width: 75%;
+    border-radius: 15% 20%;
+    max-width: 100%;
     height: auto;
 
+}
+
+.name {
+    color: #41818B;
+}
+
+.section-header {
+    color:#5B6886
+}
+
+/* About Me */
+div.about-me {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.skills-list {
+    list-style: none;
+}
+
+li {
+  display: inline;
+background-color: #D39388;}
+
+.degree-title {
+    text-align: left;
+}
+
+.section-category {
+    float: left;
+}
+
+/* Projects */
+div.projects {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    text-align: center;
 }

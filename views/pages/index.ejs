@@ -1,32 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <%- include('../partials/head'); %>
 </head>
+
 <body>
-    <header>
-      <%- include('../partials/header'); %>
-    </header>
-    
-    <main>
-      <div class="background-page">
-        <div class="bio-info">
-          <h1 class="bio-info">Hi, I'm Jada</h1>
-          <div class="bio-info-body">
-            <p>I'm a NYC-based Software Engineer currently studying Computer Science at Oregon State University.</p>
-            <div class="bio-info-image">
-              <img class="headshot" src="assets/images/headshot.jpg" alt="A black, brown, and white dog wearing a kerchief">
-            </div>
-          </div>
+  <header>
+    <%- include('../partials/header'); %>
+  </header>
+
+  <main>
+    <div class="background-page">
+      <div class="bio-info">
+        <!--Intro Section-->
+        <div class="bio-info-body">
+          <h1 class="bio-info">Hi, I'm <span class="name">Jada</span></h1>
+          <p>I'm a NYC-based Software Engineer currently studying Computer Science at Oregon State University.</p>
+        </div>
+        <div class="bio-info-image">
+          <img class="headshot" src="assets/images/headshot.jpg" alt="A black, brown, and white dog wearing a kerchief">
         </div>
       </div>
-    </main>
+      <!--About Me Section-->
+      <div class="about-me">
+        <h2 class="section-header">About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Pellentesque dignissim enim sit amet venenatis. Netus et malesuada fames ac. Laoreet sit amet
+          cursus sit amet dictum sit amet justo. Quam quisque id diam vel. Quam pellentesque nec nam aliquam sem et
+          tortor. Molestie a iaculis at erat pellentesque. Et sollicitudin ac orci phasellus egestas. Congue nisi vitae
+          suscipit tellus mauris a. Ultricies mi eget mauris pharetra et ultrices neque ornare. Nibh ipsum consequat
+          nisl vel pretium lectus. Massa tempor nec feugiat nisl. Sed pulvinar proin gravida hendrerit. Viverra nibh
+          cras pulvinar mattis. Praesent elementum facilisis leo vel fringilla. Posuere urna nec tincidunt praesent
+          semper feugiat nibh sed.
+          <br>
+          Ut morbi tincidunt augue interdum velit euismod in pellentesque massa. Nisl pretium fusce id velit. Nibh
+          praesent tristique magna sit amet purus gravida quis blandit. Gravida quis blandit turpis cursus in. Vel
+          facilisis volutpat est velit egestas dui id ornare arcu. Fermentum et sollicitudin ac orci phasellus egestas
+          tellus rutrum. Pharetra vel turpis nunc eget lorem. Enim praesent elementum facilisis leo vel fringilla est.
+          Varius morbi enim nunc faucibus a pellentesque sit amet. Aliquam malesuada bibendum arcu vitae elementum
+          curabitur. Purus in mollis nunc sed id semper risus in hendrerit. Dui id ornare arcu odio ut sem nulla
+          pharetra diam. Pellentesque elit ullamcorper dignissim cras tincidunt. Mauris vitae ultricies leo integer
+          malesuada. Venenatis lectus magna fringilla urna porttitor rhoncus dolor. Nisl condimentum id venenatis a
+          condimentum vitae sapien.</p>
 
-    <footer>
-      <%- include('../partials/footer'); %>
-    </footer>
+          <!--Skills-->
+          <div class="skills">
+            <h3 class="section-header">Skills</h3>
+            <strong class="section-category">Programming Languages</strong>
+            <ul class="skills-list">
+              <li>Python</li>
+              <li>HTML/CSS</li>
+              <li>JavaScript</li>
+              <li>C/C++</li>
+            </ul>
+            <strong class="section-category">Tools/Frameworks</strong>
+            <ul class="skills-list">
+              <li>Tool 1</li>
+              <li>Tool 2</li>
+              <li>Tool 3</li>
+              <li>Tool 4</li>
+            </ul>
+            <strong class="section-category">Concepts</strong>
+            <ul class="skills-list">
+              <li>Concept 1</li>
+              <li>Concept 2</li>
+              <li>Concept 3</li>
+              <li>Concept 4</li>
+            </ul>
+          </div>
 
-    
+          <!--Education-->
+          <div class="skills">
+            <h3 class="section-header">Education</h3>
+            <div>
+              <h4 class="degree-title">Bachelor of Science in Computer Science</h4>
+              <p>Expected June 2023</p>
+              <p>Oregon State University</p>
+              <p class="section-category"> Relevant Coursework:</p>
+              <ul class="skills-list">
+                <li>Course 1</li>
+                <li>Course 2</li>
+                <li>Course 3</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="degree-title">Bachelor of Arts in Urban Studies</h4>
+              <p>May 2019</p>
+              <p>Columbia University</p>
+            </div>
+          </div>
+          
+      </div>
+      <!--Projects Section-->
+      <div class="projects">
+        <h2 class="section-header">Projects</h2>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <%- include('../partials/footer'); %>
+  </footer>
+
+
   <script src="assets/scripts/index.js"></script>
 </body>
+
 </html>
