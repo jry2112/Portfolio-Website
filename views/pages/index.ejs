@@ -15,7 +15,7 @@
       <div class="bio-info">
         <!--Intro Section-->
         <div class="bio-info-body">
-          <h1 class="bio-info">Hi, I'm <span class="name">Jada</span></h1>
+          <h1 class="bio-info">Hi, I'm <span class="name">Jada Young</span></h1>
           <p>I'm a NYC-based Software Engineer currently studying Computer Science at Oregon State University.</p>
         </div>
         <div class="bio-info-image">
@@ -95,11 +95,30 @@
       <!--Projects Section-->
       <div class="projects">
         <h2 class="section-header">Projects</h2>
-
         <% projects.forEach(function(project) { %>
-          <strong class="project-title"> <%= project.name %></strong>
-          <div>
-            <img class="project-screenshot" src="<%= project.image %>" alt="project.alt">
+          <div class="project-section">
+            <strong class="project-title"> <%= project.name %></strong>
+            <div class="screenshot-div">
+              <img class="project-screenshot" src="<%= project.image %>" alt="project.alt">
+            </div>  
+          </div>
+        <% }); %>
+      </div>
+
+      <!--Experience Section-->
+      <div class="--Experience">
+        <h2 class="section-header">Experience</h2>
+        <% jobs.forEach(function(job) { %>
+          <div class="job-section">
+            <strong class="job-title"> <%= job.position %></strong>
+            <%= job.company %>
+            <%= job.startdate %>
+            <%= job.enddate %>
+            <% job.tasks.forEach(function(task){ %>
+              <ul>
+                <li><%= task%></li>
+              </ul>          
+            <% }); %>
           </div>
         <% }); %>
       </div>
