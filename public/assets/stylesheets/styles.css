@@ -4,9 +4,6 @@ body {
     background-color: #A9BCD0;
 }
 
-div {
-    padding: 1rem;
-}
 
 .background-page {
     background-color: #D8DBE2;
@@ -14,7 +11,6 @@ div {
     border-radius: 10px 15px 15px 10px;;
     margin: auto;
     width: 80%;
-    padding: 5rem;
 }
 
 /* Header Area */
@@ -32,13 +28,13 @@ div {
 
 /* Bio */
 .bio-info {
-    position: absolute;
+    position: relative;
     margin: auto;
     width: 90%;
     height: auto;
     overflow: hidden;
     font-family: 'Open Sans', sans-serif;
-    top: 40px;
+    top: 5%;
 }
 
 h1.bio-info {
@@ -59,6 +55,8 @@ div.bio-info-body {
 }
 
 div.bio-info-image {
+    position: relative;
+    top: 20px;
     width: 35%;
     margin: auto;
     float: right;
@@ -66,6 +64,7 @@ div.bio-info-image {
 
 .short-bio {
     position: relative;
+    padding: 10%;
     width: 50em;
 }
 
@@ -85,15 +84,30 @@ div.bio-info-image {
 }
 
 #spacer {
-    height: 20rem;
+    height: 4rem;
 }
 
 /* About Me */
 div.about-me {
     position: relative;
-    width: 90%;
+    padding: 10px 0;
+    width: 100%;
     margin: auto;
     text-align: center;
+    background-color: white;
+}
+
+div.about-me > h2 {
+    margin: 20px;
+    padding: 0 5rem;
+}
+
+div.about-me > p {
+    padding: 0 5rem;
+}
+
+div.skills {
+    padding: 0 5rem;
 }
 
 .skills-list {
