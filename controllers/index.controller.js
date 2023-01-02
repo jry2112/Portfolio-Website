@@ -11,10 +11,24 @@ const getHome = ((req, res) => {
         {position: 'Position 2', company: 'Company 2', location: 'City, State', startdate: '1.1.1111', enddate: '1.1.1111', tasks: ['task1', 'task2'] }
     ];
 
+    var languages = ['Python', 'JavaScript', 'HTML/CSS', 'C/C++'];
+    var tools = ['a', 'b'];
+    var concepts = ['a', 'b'];
+
+    var columbiaCourses = {title: 'thesis Title',
+                            link: 'file_link'}
+
+    var osuCourses = ['Assembly Language and Architecture', 'Web Development', 'Introduction to Databases', 'Data Structures & Algorithms', 'Operating Systems', 'Software Engineering I & II', 'Introduction to Cybersecurity', 'Introduction to Networks']
+
     res.status(200);
     res.render('pages/index', {
         projects: projects,
-        jobs: jobs
+        jobs: jobs,
+        osuCourses: osuCourses,
+        columbiaCourses: columbiaCourses,
+        tools: tools,
+        languages: languages,
+        concepts: concepts
     });
 });
 

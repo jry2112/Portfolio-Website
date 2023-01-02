@@ -50,24 +50,21 @@
             <h3 class="section-header">Skills</h3>
             <strong class="section-category">Programming Languages</strong>
             <ul class="skills-list">
-              <li>Python</li>
-              <li>HTML/CSS</li>
-              <li>JavaScript</li>
-              <li>C/C++</li>
+              <% languages.forEach(function(language) { %>
+                <li><%= language %></li>
+              <% }); %>
             </ul>
             <strong class="section-category">Tools/Frameworks</strong>
             <ul class="skills-list">
-              <li>Tool 1</li>
-              <li>Tool 2</li>
-              <li>Tool 3</li>
-              <li>Tool 4</li>
+              <% tools.forEach(function(tool) { %>
+                <li><%= tool %></li>
+              <% }); %>
             </ul>
             <strong class="section-category">Concepts</strong>
             <ul class="skills-list">
-              <li>Concept 1</li>
-              <li>Concept 2</li>
-              <li>Concept 3</li>
-              <li>Concept 4</li>
+              <% concepts.forEach(function(concept) { %>
+                <li><%= concept %></li>
+              <% }); %>
             </ul>
           </div>
 
@@ -82,9 +79,9 @@
                 <p class="section-category"> Relevant Coursework:</p>
               </li>
                 <ul class="courses-list">
-                  <li>Course 1</li>
-                  <li>Course 2</li>
-                  <li>Course 3</li>
+                  <% osuCourses.forEach(function(osuCourse) { %>
+                    <li><%= osuCourse %></li>
+                  <% }); %>
                 </ul>  
               </ul>
             </div>
@@ -93,12 +90,10 @@
                 <li>
                   <h4 class="degree-title">Bachelor of Arts in Urban Studies</h4>
                   <p class="degree-details">Columbia University <br> May 2019</p>
-                  <p class="section-category"> Relevant Coursework:</p>
+                  <p class="section-category"> Senior Thesis: </p>
               </li>
                 <ul class="courses-list">
-                  <li>Course 1</li>
-                  <li>Course 2</li>
-                  <li>Course 3</li>
+                  <li><%=columbiaCourses.title%></li>
                 </ul>  
               </ul>
 
@@ -120,7 +115,7 @@
       </div>
 
       <!--Experience Section-->
-      <div class="--Experience">
+      <div class="experience">
         <h2 class="section-header">Experience</h2>
         <% jobs.forEach(function(job) { %>
           <div class="job-section">
@@ -128,11 +123,11 @@
             <%= job.company %>
             <%= job.startdate %>
             <%= job.enddate %>
-            <% job.tasks.forEach(function(task){ %>
-              <ul>
+            <ul>
+              <% job.tasks.forEach(function(task){ %>
                 <li><%= task%></li>
-              </ul>          
-            <% }); %>
+              <% }); %>
+            </ul>          
           </div>
         <% }); %>
       </div>

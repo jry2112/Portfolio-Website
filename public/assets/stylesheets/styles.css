@@ -116,10 +116,10 @@ div.skills {
 
 .skills-list li {
     border-radius: 10px;
-    display: inline;
-    background-color: #D39388;
+    display: inline-block;
+    background-color: rgba(88, 164, 176, 0.3);
     padding: 5px 8px;
-    margin: 20px 10px;
+    margin: 0 1rem;
 }
 
 .degree-title {
@@ -127,9 +127,11 @@ div.skills {
 }
 
 .courses-list li {
-    display: inline;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: rgba(88, 164, 176, 0.3);
     padding: 5px 8px;
-    margin: 20px 10px;
+    margin: .5rem 1rem;
 }
 
 .section-category {
@@ -154,22 +156,33 @@ div.projects {
     height: auto;
 }
 
+/* Experience */
+div.experience {
+    background-color: white;
+}
+
 /* Footer */
-.footer {
-    position: block;
-    height: 200px;
+footer {
+    position: absolute;
+    height: auto;
+    left: 0;
+    right: 0;
     background-color: #41818B;
+}
+
+div.footer {
+    position: relative;
 }
 
 
 .contact-me {
-    position: relative;
-    width: 20rem;
+    position: absolute;
+    width: fit-content;
     display: inline;
 }
 
-.contact-me p {
-    width: 5em;
+.contact-me > p {
+    width: fit-content;
 }
 
 .social-logos {
@@ -178,10 +191,12 @@ div.projects {
 }
 
 .social-logo {
-    width: 40px;
+    max-width: 100px;
+    max-height: 40px;
+    width: auto;
     height: auto;
     position: relative;
-    display: inline;
+    display: inline-block;
 }
 
 .material-symbols-outlined {
