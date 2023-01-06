@@ -1,9 +1,15 @@
-/*Background */
+/* Body */
+
+a {
+    text-decoration: none;
+}
 
 body {
     background-color: #A9BCD0;
+    font-family: 'Open Sans', sans-serif;
 }
 
+/*Background */
 
 .background-page {
     background-color: #D8DBE2;
@@ -39,9 +45,9 @@ body {
 
 h1.bio-info {
     color: black;
-    font-size: 6rem;
+    font-size: 5rem;
     font-family: 'Open Sans', sans-serif;
-    width: 35rem;
+    width: 100%;
     position: relative;
 
 
@@ -49,7 +55,7 @@ h1.bio-info {
 
 div.bio-info-body {
     position: relative;
-    width: 55%;
+    width: 65%;
     float: left;
     margin: auto;
 }
@@ -77,10 +83,12 @@ div.bio-info-image {
 
 .name {
     color: #41818B;
+    font-size: 6rem;
 }
 
 .section-header {
-    color:#5B6886
+    color:#5B6886;
+    padding: 1.5rem 2rem;
 }
 
 #spacer {
@@ -126,6 +134,17 @@ div.skills {
     text-align: left;
 }
 
+.degree-details {
+    position: relative;
+    left: 25%;
+    bottom: 50px;
+}
+
+.degrees-list > li {
+    position: relative;
+    height: 55px;
+}
+
 .courses-list li {
     border-radius: 10px;
     display: inline-block;
@@ -138,12 +157,26 @@ div.skills {
     float: left;
 }
 
+p.section-category {
+    float: left;
+    position: relative;
+    bottom: 5rem;
+}
+
 /* Projects */
 div.projects {
     position: relative;
     width: 90%;
     margin: auto;
     text-align: center;
+}
+
+div.project-section {
+    padding: 0 0 2rem 0;
+}
+
+.project-title {
+    margin-bottom: 1rem;
 }
 
 .project-title {
@@ -159,6 +192,39 @@ div.projects {
 /* Experience */
 div.experience {
     background-color: white;
+}
+
+.job-title {
+    color: #41818B;
+    font-weight: 700;
+    margin: 2.25rem;
+    position: relative;
+}
+
+.job-position {
+    list-style: none;
+    display: inline;
+}
+
+.job-position > li {
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.company {
+    margin: 0 3rem;
+}
+
+.startdate {
+    padding: 0 1rem 0 0;
+}
+
+.enddate {
+    padding: 0 0 0 1rem;
+}
+
+.date-hyphen {
+    color:#41818B;
 }
 
 /* Footer */

@@ -7,12 +7,38 @@ const getHome = ((req, res) => {
     ];
 
     var jobs = [
-        {position: 'Position', company: 'Company', location: 'City, State', startdate: '1.1.1111', enddate: '1.1.1111', tasks: ['task1', 'task2'] },
-        {position: 'Position 2', company: 'Company 2', location: 'City, State', startdate: '1.1.1111', enddate: '1.1.1111', tasks: ['task1', 'task2'] }
+        {
+            position: 'Development and Operations Consultant', 
+            company: 'CSG LLC Technical Trade Training', 
+            location: 'New York, NY', 
+            startdate: 'December 2020', 
+            enddate: 'Present', 
+            tasks: ['Produced proposal that successfully attained access to over $300,000 in state workforce training funds.', 
+            'Design, develop, and maintain 200+ hours of Telecommunications (Structured Cabling) learning material including storyboards, project plans, and LMS deployment.',
+            'Identify opportunities for partnership with local community organizations that has led to enrollment doubling quarterly.']
+        },
+        {
+            position: 'Landlord Underwriting Specialist (Temporary)', 
+            company: 'TheGuarantors', 
+            location: 'New York, NY', 
+            startdate: 'February 2022', 
+            enddate: 'September 2022', 
+            tasks: ['Analyzed applications and determined suitability for product using company workflows and technologies to reduce company risk.', 
+            'Answered property owners’ queries regarding products and services.']
+        },
+        {
+            position: 'Licensed Real Estate Salesperson', 
+            company: 'Crosstown Apartments NYC ', 
+            location: 'New York, NY', 
+            startdate: 'March 2018', 
+            enddate: 'April 2020', 
+            tasks: ['Executed marketing initiatives to attain over $140,000 in rental transactions annually. ', 
+            'Hired, trained, and managed a top-performing  5-member team of junior agents to further develop sales skills and meet performance goals.']
+        }
     ];
 
-    var languages = ['Python', 'JavaScript', 'HTML/CSS', 'C/C++'];
-    var tools = ['a', 'b'];
+    var languages = ['Python', 'JavaScript', 'HTML/CSS', 'C/C++', 'MySQL'];
+    var tools = ['Node.JS', 'Express', 'EJS/Handlebars', 'Bootstrap', 'MariaDB'];
     var concepts = ['a', 'b'];
 
     var columbiaCourses = {title: 'thesis Title',
