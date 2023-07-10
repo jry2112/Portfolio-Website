@@ -1,151 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <%- include('../partials/head'); %>
-</head>
-
-<body>
-  <header>
-    <%- include('../partials/header'); %>
-  </header>
-
-  <main>
-    <div class="background-page">
-      <div class="bio-info">
-        <!--Intro Section-->
-        <div class="bio-info-body">
-          <h1 class="bio-info">Hi, I'm <br><div class="name">Jada Young</div></h1>
-          <p class="short-bio">I'm a NYC-based Software Engineer currently studying Computer Science at Oregon State University. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <head><%- include('../partials/head'); %> </head>
+  <body>
+    <header><%- include('../partials/header'); %> </header>
+    <main>
+      <div class="background-page">
+        <div class="bio-info">
+          <!--Intro Section-->
+          <div class="bio-info-body">
+            <h1 class="bio-info">Hi, I'm <br>
+              <div class="name">Jada Young</div>
+            </h1>
+            <p class="short-bio">
+              I'm a NYC-based Fullstack Software Engineer that recently earned a degree in Computer Science at Oregon State University. I'm interested in Cybersecurity, Networking, and Cloud Development. I currently have CompTIA's Network+, Security+, and ISC2's Certified in Cybersecurity certifications. My previous projects interests have covered a variety of areas such as Web Development/Backend Development, Data Engineering, DevOps/Cloud Computing, and Cybersecurity. </p>
+          </div>
+          <div class="bio-info-image">
+            <img class="headshot" src="assets/images/headshot.jpg" alt="Jada Young headshot">
+          </div>
         </div>
-        <div class="bio-info-image">
-          <img class="headshot" src="assets/images/headshot.jpg" alt="Jada Young headshot">
-        </div>
-      </div>
-      <div id='spacer'></div>
-      <!--About Me Section-->
-      <div class="about-me">
-        <h2 class="section-header">About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Pellentesque dignissim enim sit amet venenatis. Netus et malesuada fames ac. Laoreet sit amet
-          cursus sit amet dictum sit amet justo. Quam quisque id diam vel. Quam pellentesque nec nam aliquam sem et
-          tortor. Molestie a iaculis at erat pellentesque. Et sollicitudin ac orci phasellus egestas. Congue nisi vitae
-          suscipit tellus mauris a. Ultricies mi eget mauris pharetra et ultrices neque ornare. Nibh ipsum consequat
-          nisl vel pretium lectus. Massa tempor nec feugiat nisl. Sed pulvinar proin gravida hendrerit. Viverra nibh
-          cras pulvinar mattis. Praesent elementum facilisis leo vel fringilla. Posuere urna nec tincidunt praesent
-          semper feugiat nibh sed.
-          <br>
-          Ut morbi tincidunt augue interdum velit euismod in pellentesque massa. Nisl pretium fusce id velit. Nibh
-          praesent tristique magna sit amet purus gravida quis blandit. Gravida quis blandit turpis cursus in. Vel
-          facilisis volutpat est velit egestas dui id ornare arcu. Fermentum et sollicitudin ac orci phasellus egestas
-          tellus rutrum. Pharetra vel turpis nunc eget lorem. Enim praesent elementum facilisis leo vel fringilla est.
-          Varius morbi enim nunc faucibus a pellentesque sit amet. Aliquam malesuada bibendum arcu vitae elementum
-          curabitur. Purus in mollis nunc sed id semper risus in hendrerit. Dui id ornare arcu odio ut sem nulla
-          pharetra diam. Pellentesque elit ullamcorper dignissim cras tincidunt. Mauris vitae ultricies leo integer
-          malesuada. Venenatis lectus magna fringilla urna porttitor rhoncus dolor. Nisl condimentum id venenatis a
-          condimentum vitae sapien.</p>
-
+        <div id='spacer'></div>
+        <!--About Me Section-->
+        <div class="about-me">
+          <h2 class="section-header">About Me</h2>
+          <p> 
+            I am a passionate advocate for innovative technologies that aim to enhance the quality of life in urban environments. Currently pursuing a second degree in Computer Science, I am excited to combine my newfound technical knowledge with my previous academic and work experiences. My focus has always been on helping individuals find solutions to complex urban challenges such as housing, education, and employment. As a lifelong learner, I thrive on embracing the challenge of learning new technologies. 
+          </p>
+          <p> 
+            Throughout my career, I have concentrated on small businesses and startup environments, where I have consistently taken the lead in spearheading projects aimed at improving business processes. By conducting thorough research and implementing relevant technologies, I have successfully achieved project goals and received recognition for meeting new technical challenges with innovative solutions. 
+          </p>
+          <p>
+          I am driven by a strong desire to contribute to the development of innovative products and services that offer fresh approaches and solutions to long-standing urban issues, particularly in the areas of housing and transportation. If you are interested in learning more about my professional journey, I invite you to connect with me! 
+        </p><%- include('../partials/dot-spacer'); %>
           <!--Skills-->
           <div class="skills">
             <h3 class="section-header">Skills</h3>
-            <strong class="section-category">Programming Languages</strong>
-            <ul class="skills-list">
-              <% languages.forEach(function(language) { %>
-                <li><%= language %></li>
-              <% }); %>
-            </ul>
-            <strong class="section-category">Tools/Frameworks</strong>
-            <ul class="skills-list">
-              <% tools.forEach(function(tool) { %>
-                <li><%= tool %></li>
-              <% }); %>
-            </ul>
-            <strong class="section-category">Concepts</strong>
-            <ul class="skills-list">
-              <% concepts.forEach(function(concept) { %>
-                <li><%= concept %></li>
-              <% }); %>
-            </ul>
-          </div>
-
+            <p><strong class="section-category">Programming Languages</strong></p>
+            <ul class="skills-list"><% languages.forEach(function(language) { %> <li><%= language %> </li><% }); %> </ul>
+          <p><strong class="section-category">Tools/Frameworks</strong></p>
+            <ul class="skills-list"><% tools.forEach(function(tool) { %> <li><%= tool %> </li><% }); %> </ul>
+          <p><strong class="section-category">Concepts</strong></p>
+            <ul class="skills-list"><% concepts.forEach(function(concept) { %> <li><%= concept %> </li><% }); %> </ul>
+          </div><%- include('../partials/dot-spacer'); %>
           <!--Education-->
-          <div class="skills">
+          <div class="education">
             <h3 class="section-header">Education</h3>
-            <div>
-              <ul class="degrees-list">
-              <li>
-                <h4 class="degree-title">Bachelor of Science in Computer Science</h4>
-                <p class="degree-details">Oregon State University <br> Expected June 2023</p>
-                <p class="section-category"> Relevant Coursework:</p>
-              </li>
-                <ul class="courses-list">
-                  <% osuCourses.forEach(function(osuCourse) { %>
-                    <li><%= osuCourse %></li>
-                  <% }); %>
-                </ul>  
-              </ul>
+            <div class="degree-table-div">
+              <table class="degree-table">
+                <tbody>
+                  <tr>
+                    <th class="degree-title">Bachelor of Science in Computer Science<br>GPA: <span style="font-weight: normal;">3.66</span></th>
+                    <th></th>
+                    <th class="degree-details">Oregon State University <br> June 2023 </th>
+                  </tr>
+                  <tr>
+                  </tr>
+                  <tr>
+                    <td class="section-category">Relevant Coursework:</td>
+                  </tr>
+                </tbody>
+              </table>
+              <ul class="courses-list"><% osuCourses.forEach(function(osuCourse) { %> <li class="osu-class"><%= osuCourse %> </li><% }); %> </ul>
             </div>
-            <div>
-              <ul class="degrees-list">
-                <li>
-                  <h4 class="degree-title">Bachelor of Arts in Urban Studies</h4>
-                  <p class="degree-details">Columbia University <br> May 2019</p>
-                  <p class="section-category"> Senior Thesis: </p>
-              </li>
-                <ul class="courses-list">
-                  <li><%=columbiaCourses.title%></li>
-                </ul>  
-              </ul>
-
+            <div class="degree-table-div">
+              <table class="degree-table">
+                <tbody>
+                  <tr>
+                    <th class="degree-title">Bachelor of Arts in Urban Studies</th>
+                    <th></th>
+                    <th class="degree-details">Columbia University <br> May 2019 </th>
+                  </tr>
+                  <tr>
+                    <td class="section-category">Senior Thesis:</td>
+                    <td class="cu-class"><%=columbiaCourses.title%> </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
-          
+        </div>
+        <!--Certifications Section-->
+        <div class="certifications">
+          <h2 class="section-header">Certifications</h2>
+          <div class="credly-badge" data-iframe-width="150" data-iframe-height="270" data-share-badge-id="b5f5a960-6ae6-4f8b-af85-448f838b7da0" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        
+        <div class="credly-badge" data-iframe-width="150" data-iframe-height="270" data-share-badge-id="9b4e4efa-0371-424d-b534-42f498ef19ee" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+      
+        <div class="credly-badge"s data-iframe-width="150" data-iframe-height="270" data-share-badge-id="bd362439-f73b-42b2-ac3d-93ae0da9d27e" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
       </div>
-      <!--Projects Section-->
+        <!--Projects Section-->
       <div class="projects">
-        <h2 class="section-header">Projects</h2>
-        <% projects.forEach(function(project) { %>
-          <div class="project-section">
-            <div class="project-title">
-              <strong class="project-title"> <%= project.name %></strong>
-            </div>
-            
-            <div class="screenshot-div">
-              <img class="project-screenshot" src="<%= project.image %>" alt="project.alt">
-            </div>  
+        <h2 class="section-header">Projects</h2><% projects.forEach(function(project) { %> <div class="project-section">
+          <div class="project-title">
+            <strong class="project-title"><%= project.name %> </strong>
           </div>
-        <% }); %>
+          <div class="screenshot-div">
+            <img class="project-screenshot" src="<%= project.image %>" alt="project.alt">
+          </div>
+        </div><% }); %>
       </div>
-
       <!--Experience Section-->
       <div class="experience">
-        <h2 class="section-header">Experience</h2>
-        <% jobs.forEach(function(job) { %>
-          <div class="job-section">
-            <span class="job-title"> <%= job.position %></span>
-            <ul class="job-position">
-                <li class="company"><%= job.company %></li>
-                <li class="startdate"><%= job.startdate %></li><span class="date-hyphen">-</span> 
-                <li class="enddate"><%= job.enddate %></li>
-            </ul>
-            
-            <ul>
-              <% job.tasks.forEach(function(task){ %>
-                <li><%= task%></li>
-              <% }); %>
-            </ul>          
-          </div>
-        <% }); %>
+        <h2 class="section-header">Experience</h2><% jobs.forEach(function(job) { %> <div class="job-section">
+          <span class="job-title"><%= job.position %> </span>
+          <ul class="job-position">
+            <li class="company"><%= job.company %> </li>
+            <li class="startdate"><%= job.startdate %> </li>
+            <span class="date-hyphen">-</span>
+            <li class="enddate"><%= job.enddate %> </li>
+          </ul>
+          <ul class="job-tasks"><% job.tasks.forEach(function(task){ %> <li><%= task%> </li><% }); %> </ul>
+        </div><% }); %>
       </div>
-    </div>
-  </main>
-
-  <footer>
-    <%- include('../partials/footer'); %>
-  </footer>
-
-
-  <script src="assets/scripts/index.js"></script>
-</body>
-
+      </div>
+    </main>
+    <footer><%- include('../partials/footer'); %> </footer>
+    <script src="assets/scripts/index.js"></script>
+  </body>
 </html>

@@ -7,6 +7,7 @@ a {
 body {
     background-color: #A9BCD0;
     font-family: 'Open Sans', sans-serif;
+    margin: 0 0;
 }
 
 /*Background */
@@ -15,22 +16,12 @@ body {
     background-color: #D8DBE2;
     box-shadow: 10px 5px 5px #8A93A8;
     border-radius: 10px 15px 15px 10px;;
+    position: relative;
+    top: 15px;
     margin: auto;
     width: 80%;
+    padding-top: 2rem;
 }
-
-/* Header Area */
-.header {
-    overflow: hidden;
-    background-color: #A9BCD0;
-}
-
-.header-right {
-    float: right;
-}
-
-/* Footer Area */
-
 
 /* Bio */
 .bio-info {
@@ -44,7 +35,7 @@ body {
 }
 
 h1.bio-info {
-    color: black;
+    color: #272A2F;
     font-size: 5rem;
     font-family: 'Open Sans', sans-serif;
     width: 100%;
@@ -112,14 +103,20 @@ div.about-me > h2 {
 
 div.about-me > p {
     padding: 0 5rem;
+    text-align: justify;
 }
 
-div.skills {
+div.skills, div.education {
     padding: 0 5rem;
+}
+strong.section-category {
+    width: 20%;
+    height: 3rem;
 }
 
 .skills-list {
     list-style: none;
+    text-align: justify;
 }
 
 .skills-list li {
@@ -127,17 +124,20 @@ div.skills {
     display: inline-block;
     background-color: rgba(88, 164, 176, 0.3);
     padding: 5px 8px;
-    margin: 0 1rem;
+    margin: 5px .7rem;
 }
 
 .degree-title {
     text-align: left;
 }
 
-.degree-details {
+.degree-table {
     position: relative;
-    left: 25%;
-    bottom: 50px;
+    width: 100%;
+}
+
+.degree-table-div {
+    padding-bottom: 5%;
 }
 
 .degrees-list > li {
@@ -153,6 +153,10 @@ div.skills {
     margin: .5rem 1rem;
 }
 
+.cu-class {
+    text-align: left;
+}
+
 .section-category {
     float: left;
 }
@@ -161,6 +165,14 @@ p.section-category {
     float: left;
     position: relative;
     bottom: 5rem;
+}
+
+/* Certifications */
+.certifications {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    text-align: center;
 }
 
 /* Projects */
@@ -192,6 +204,7 @@ div.project-section {
 /* Experience */
 div.experience {
     background-color: white;
+    padding-bottom: 2rem;
 }
 
 .job-title {
@@ -211,6 +224,14 @@ div.experience {
     display: inline-block;
 }
 
+.job-tasks {
+    margin-bottom: 2%;
+}
+
+.job-tasks > li {
+    width: 90%;
+}
+
 .company {
     margin: 0 3rem;
 }
@@ -227,48 +248,3 @@ div.experience {
     color:#41818B;
 }
 
-/* Footer */
-footer {
-    position: absolute;
-    height: auto;
-    left: 0;
-    right: 0;
-    background-color: #41818B;
-}
-
-div.footer {
-    position: relative;
-}
-
-
-.contact-me {
-    position: absolute;
-    width: fit-content;
-    display: inline;
-}
-
-.contact-me > p {
-    width: fit-content;
-}
-
-.social-logos {
-    width: fit-content;
-    float: right;
-}
-
-.social-logo {
-    max-width: 100px;
-    max-height: 40px;
-    width: auto;
-    height: auto;
-    position: relative;
-    display: inline-block;
-}
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 40
-}

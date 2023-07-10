@@ -37,11 +37,11 @@ const getHome = ((req, res) => {
         }
     ];
 
-    var languages = ['Python', 'JavaScript', 'HTML/CSS', 'C/C++', 'MySQL'];
-    var tools = ['Node.JS', 'Express', 'EJS/Handlebars', 'Bootstrap', 'MariaDB'];
-    var concepts = ['a', 'b'];
+    var languages = ['Python', 'JavaScript', 'HTML/CSS', 'C/C++', 'SQL'];
+    var tools = ['Node.JS', 'Express', 'EJS/Handlebars', 'Bootstrap', 'MariaDB', 'WireShark', 'Burp Suite', 'Kali Linux'];
+    var concepts = ['Cloud Computing (GCP)', 'Data Migration + Visualization', 'Web Application Security', 'Vulnerabilty Assessment & Penetration Testing', 'Networking'];
 
-    var columbiaCourses = {title: 'thesis Title',
+    var columbiaCourses = {title: '"We asked the City for Help, We Got a Raid Instead:" Confronting Youth Gun Violence in Post-Stop and Frisk New York',
                             link: 'file_link'}
 
     var osuCourses = ['Assembly Language and Architecture', 'Web Development', 'Introduction to Databases', 'Data Structures & Algorithms', 'Operating Systems', 'Software Engineering I & II', 'Introduction to Cybersecurity', 'Introduction to Networks']
