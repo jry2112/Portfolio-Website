@@ -12,7 +12,10 @@
               <div class="name">Jada Young</div>
             </h1>
             <p class="short-bio">
-              I'm a NYC-based Fullstack Software Engineer that recently earned a degree in Computer Science at Oregon State University. I'm interested in Cybersecurity, Networking, and Cloud Development. I currently have CompTIA's Network+, Security+, and ISC2's Certified in Cybersecurity certifications. My previous projects interests have covered a variety of areas such as Web Development/Backend Development, Data Engineering, DevOps/Cloud Computing, and Cybersecurity. </p>
+              I'm a NYC-based Fullstack Software Engineer that recently earned a degree in Computer Science at Oregon State University. I'm interested in Cybersecurity, Networking, and Cloud Development. I currently have CompTIA's Network+, Security+, and ISC2's Certified in Cybersecurity certifications. My previous projects interests have covered a variety of areas such as Web Development/Backend Development, Data Engineering, DevOps/Cloud Computing, and Cybersecurity.
+              <br>,<br>
+              &#x1F6A7; This site is still a work in progress &#x1F6A7;, so please excuse the mess. If you have any questions feel free to reach out: contact@jadayoung.me.  
+             </p>
           </div>
           <div class="bio-info-image">
             <img class="headshot" src="assets/images/headshot.jpg" alt="Jada Young headshot">
@@ -96,11 +99,15 @@
               <strong class="project-title"><%= project.name %> </strong>
             </div>
             <div class="screenshot-div">
-              <img class="project-screenshot" src="<%= project.image %>" alt="project.alt">
+              <% if (project.name === 'Find Flights Travel App') { %>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FLHcZQIj5as" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <% } else { %>
+                <img class="project-screenshot" src="<%= project.image %>" alt="project.alt">
+              <% }; %>
             </div>
             <div class="description-div">
               <p>
-                <%= project.description %>
+                <%- project.description %>
               </p>
             </div>
           </div>

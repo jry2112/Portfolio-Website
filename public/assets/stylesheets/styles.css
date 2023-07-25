@@ -202,6 +202,11 @@ div.project-section {
     height: auto;
 }
 
+img.project-screenshot {
+    height: 80%;
+    width: 80%;
+}
+
 /* Experience */
 div.experience {
     background-color: white;
