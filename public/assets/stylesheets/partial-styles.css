@@ -48,12 +48,13 @@
 
 footer {
     position: relative;
-    height: 55px;
+    height: 65px;
     left: 0;
     right: 0;
     bottom: 0;
     margin-top: 30px;
     background-color: #41818B;
+    color: #e7f0f2;
 }
 
 div.footer {
@@ -72,12 +73,15 @@ div.footer {
     height: 50px;
 }
 
-.contact-me > span {
+.contact-me > p {
     height: fit-content;
     width: fit-content;
-    font-size: 2.25rem;
+    font-weight:bolder;
+    font-size: 2.5rem;
     position: absolute;
     left: 4%;
+    margin: 10px;
+    color: #003049;
 }
 
 .social-logos {
@@ -85,6 +89,7 @@ div.footer {
     width: fit-content;
     float: right;
     margin: 0 2rem;
+    right: 50px;
 }
 
 .social-logo {
@@ -95,6 +100,21 @@ div.footer {
     position: relative;
     display: inline-block;
 }
+
+.credits {
+    text-align: center;
+    position: absolute;
+    width: fit-content;
+    bottom: 0;
+    right: 2rem;
+    font-size: x-small;
+}
+
+.credits > p {
+    margin: 0;
+    position: relative;
+}
+
 
 .material-symbols-outlined {
   font-variation-settings:

@@ -89,14 +89,22 @@
       </div>
         <!--Projects Section-->
       <div class="projects">
-        <h2 class="section-header">Projects</h2><% projects.forEach(function(project) { %> <div class="project-section">
-          <div class="project-title">
-            <strong class="project-title"><%= project.name %> </strong>
+        <h2 class="section-header">Projects</h2>
+        <% projects.forEach(function(project) { %> 
+          <div class="project-section">
+            <div class="project-title">
+              <strong class="project-title"><%= project.name %> </strong>
+            </div>
+            <div class="screenshot-div">
+              <img class="project-screenshot" src="<%= project.image %>" alt="project.alt">
+            </div>
+            <div class="description-div">
+              <p>
+                <%= project.description %>
+              </p>
+            </div>
           </div>
-          <div class="screenshot-div">
-            <img class="project-screenshot" src="<%= project.image %>" alt="project.alt">
-          </div>
-        </div><% }); %>
+        <% }); %>
       </div>
       <!--Experience Section-->
       <div class="experience">

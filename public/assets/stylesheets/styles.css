@@ -79,7 +79,8 @@ div.bio-info-image {
 
 .section-header {
     color:#5B6886;
-    padding: 1.5rem 2rem;
+    padding: 0rem 2rem;
+    margin: 2px;
 }
 
 #spacer {
